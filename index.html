@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Railway Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚆 Railway Ticket Booking</h1>
+
+    <div class="controls">
+      <label for="train">Select Train:</label>
+      <select id="train">
+        <option value="Rajdhani|1200">Rajdhani Express - $1200</option>
+        <option value="Shatabdi|900">Shatabdi Express - $900</option>
+        <option value="Duronto|1100">Duronto Express - $1100</option>
+      </select>
+    </div>
+
+    <div class="seat-map" id="seatMap"></div>
+
+    <div class="summary">
+      <p>Selected Seats: <span id="selectedCount">0</span></p>
+      <p>Total Price: ₹<span id="totalPrice">0</span></p>
+      <button id="bookNow">Book Now</button>
+    </div>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
